@@ -17,43 +17,19 @@ Whether you are a Data Scientist, Machine Learning Engineer, or a Curious Learne
 
 * Note that we only list the most popular options for experimentation and training. For production, you should probably consider the full range of options available from each provider on their respective websites.
 
-```yaml
-table:
-  - headers
-    - Cloud Provider
-    - GPU Type
-    - GPU Memory
-    - vCPU
-    - RAM
-    - Price
-    - Technical Name
-    - Link
-  - rows
-    - Cloud Provider: AWS
-      GPU Type: NVIDIA Tesla V100
-      GPU Memory: 16GB
-      vCPU: 8
-      RAM: 61GB
-      Price: $3.06/hr
-      Technical Name: p3.2xlarge
-      Link: https://aws.amazon.com/ec2/instance-types/p3/
-    - Cloud Provider: GCP
-      GPU Type: NVIDIA Tesla V100
-      GPU Memory: 16GB
-      vCPU: 8
-      RAM: 61GB
-      Price: $2.48/hr
-      Technical Name: n1-highmem-8
-      Link: https://cloud.google.com/compute/docs/gpus
-    - Cloud Provider: Azure
-      GPU Type: NVIDIA Tesla V100
-      GPU Memory: 16GB
-      vCPU: 6
-      RAM: 112GB
-      Price: $3.06/hr
-      Technical Name: Standard_NC6s_v3
-      Link: https://docs.microsoft.com/en-us/azure/virtual-machines/ncv3-series
-```
+| Cloud Provider | GPU Type                  | GPU Memory | vCPU | RAM    | Price*    | Technical Name      | Link                                                                                      |
+|----------------|---------------------------|------------|------|--------|-----------|---------------------|-------------------------------------------------------------------------------------------|
+| AWS            | NVIDIA Tesla V100         | 16GB       | 8    | 61GB   | $3.06/hr  | p3.2xlarge          | https://aws.amazon.com/ec2/instance-types/p3/                                             |
+| AWS            | NVIDIA Tesla T4           | 16GB       | 4    | 16GB   | $0.82/hr  | g4dn.xlarge         | https://aws.amazon.com/ec2/instance-types/g4/                                             |
+| AWS            | NVIDIA Tesla A10G         | 24GB       | 4    | 16GB   | $1.35/hr  | g5.xlarge           | https://aws.amazon.com/ec2/instance-types/g5/                                             |
+| GCP            | NVIDIA Tesla V100         | 16GB       | 8    | 61GB   | $2.48/hr  | n1-highmem-8        | https://cloud.google.com/compute/docs/gpus                                                |
+| GCP            | NVIDIA Tesla T4           | 16GB       | 4    | 16GB   | $0.95/hr  | n1-standard-4       | https://cloud.google.com/compute/docs/gpus                                                |
+| GCP            | NVIDIA Tesla A100         | 40GB       | 12   | 85GB   | $4.10/hr  | a2-highgpu-1g       | https://cloud.google.com/compute/docs/gpus                                                |
+| Azure          | NVIDIA Tesla V100         | 16GB       | 6    | 112GB  | $3.06/hr  | Standard_NC6s_v3    | https://docs.microsoft.com/en-us/azure/virtual-machines/ncv3-series                       |
+| Azure          | NVIDIA Tesla T4           | 16GB       | 4    | 28GB   | $0.90/hr  | Standard_NC4as_T4_v3| https://docs.microsoft.com/en-us/azure/virtual-machines/nct4-v3-series                    |
+| Azure          | NVIDIA Tesla A100         | 40GB       | 8    | 56GB   | $3.80/hr  | Standard_NC8as_A100_v4 | https://docs.microsoft.com/en-us/azure/virtual-machines/nca100-v4-series               |
+
+Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep Learning & AI models. (**Note:** The prices are subject to change, check the provided links for the latest prices)
 
 ### NVIDIA Drivers & CUDA Installation
 
@@ -106,6 +82,10 @@ table:
 # Contributing
 
 - Contributions, suggestions, and issue reports are welcome from the community to make Cloud **GPU Handbook** a valuable resource for everyone interested in leveraging the power of GPUs in the cloud.
+
+# Disclaimer
+
+> Please note that the information about the GPU offerings, such as GPU type, GPU memory, vCPU, RAM, price, and technical name, varies across different cloud providers and may change over time. Therefore, it's always a good idea to check the official websites for the most up-to-date and detailed information. Also, the prices listed are subject to change and may vary based on the region and other factors. Always check the provider's pricing page for the most accurate and current pricing information. 
 
 # Related Links
 
