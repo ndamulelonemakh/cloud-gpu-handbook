@@ -1,4 +1,4 @@
-# Cloud GPU Handbook 
+# Cloud GPU Handbook [WIP]
 
 * Author: [Ndamulelo Nemakhavhani](https://linkedin.com/in/ndamulelonemakhavhani)
 
@@ -34,24 +34,20 @@ Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep 
 ### NVIDIA Drivers & CUDA Installation
 
 * NVIDIA drivers and CUDA installation are required to run GPU workloads on the cloud. The following commands can be used to install the drivers and CUDA on Ubuntu.
+* Most cloud providers already offer managed services that come pre-installed with all the necessary dependencies - If these meet your needs, consider using them instead
 
-```yaml
-table:
-  - headers
-    - GPU Type
-    - Minimum NVIDIA Driver Version
-    - Maximum NVIDIA Driver Version 
-    - Minimum CUDA Version
-    - Maximum CUDA Version
-    - Comments
-  - rows
-    - GPU Type: NVIDIA Tesla V100
-      Minimum NVIDIA Driver Version: 418.87
-      Maximum NVIDIA Driver Version: 460.32
-      Minimum CUDA Version: 10.0 
-      Maximum CUDA Version: 11.0
-      Comments: The NVIDIA driver and CUDA version requirements are subject to change. Please check the NVIDIA website for the latest information.
-```
+| GPU Type                  | Minimum NVIDIA Driver Version | Maximum NVIDIA Driver Version | Minimum CUDA Version | Maximum CUDA Version |
+|---------------------------|-------------------------------|-------------------------------|----------------------|----------------------|
+| NVIDIA Tesla V100         | 418.87                        |                               | 10.0                 |                      |
+| NVIDIA Tesla T4           | 410.79                        |                               | 10.0                 |                      |
+| NVIDIA Tesla A10G         | 418.87                        |                               | 10.0                 |                      |
+| NVIDIA Tesla A100 40GB    | 450.36                        |                               | 11.0                 |                      |
+| NVIDIA Tesla A100 80GB    | 450.36                        |                               | 11.0                 |                      |
+| NVIDIA Tesla P100         | 410.48                        |                               | 9.0                  |                      |
+| NVIDIA Tesla K80          | 375.26                        |                               | 8.0                  |                      |
+| NVIDIA GeForce RTX 2080 Ti| 411.31                        |                               | 10.0                 |                      |
+| NVIDIA GeForce RTX 3090   | 452.39                        |                               | 11.0                 |                      |
+
 
 ## Specialized GPU Offerings
 
@@ -89,7 +85,6 @@ table:
 
 # Related Links
 
-* [NVIDIA GPU Cloud](https://www.nvidia.com/en-us/gpu-cloud/)
-* [NVIDIA NGC Catalog](https://ngc.nvidia.com/catalog)
-* [TensorFlow GPU Support](https://www.tensorflow.org/install/gpu)
 * [PyTorch GPU Support](https://pytorch.org/get-started/locally/)
+* [TensorFlow GPU Support](https://www.tensorflow.org/install/gpu)
+* [NVIDIA GPU Cloud](https://www.nvidia.com/en-us/gpu-cloud/)
