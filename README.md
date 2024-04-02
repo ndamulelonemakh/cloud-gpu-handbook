@@ -65,8 +65,6 @@ Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep 
 * [Google Colaboratory](https://colab.research.google.com/)
 * [Kaggle](https://www.kaggle.com/code)
 * [AWS SageMaker Studio Lab](https://studiolab.sagemaker.aws/) 
-* [Deepnote](https://deepnote.com/)
-* [Gradient](https://gradient.run/)
 
 # Tips
 
