@@ -2,8 +2,7 @@
 
 * Author: [Ndamulelo Nemakhavhani](https://linkedin.com/in/ndamulelonemakhavhani)
 
-**Motivation** - I find the information about running GPUs in the public clouds to be very fragmented and presented in an unfriendly way. I want to create a catalog of cloud GPU offerings that is easy to read and compare. The objective is for users to get up and running with a GPU for training their models as quickly as possible. This repository aims to provide an easy-to-understand catalog of common cloud GPU instances, their specifications, pricing, and essential setup information.
-Whether you are a Data Scientist, Machine Learning Engineer, or a Curious Learner, this handbook aims to save you time and effort so you get started with your GPU workloads as quickly as possible.
+**Motivation** - I want to create an easy-to-read catalog of common cloud GPU offerings for users to quickly get started with training models or conduct their research. This repository will attempt to provide relevant specifications, pricing, and setup information to save time and effort for Data Scientists, Machine Learning Engineers, Platform Engineers etc.
 
 > **Updates:** I will try to keep this catalog up to date with the latest information. If you find any errors or have any suggestions, please feel free to create an issue or a pull request. Contributions are welcome.
 
