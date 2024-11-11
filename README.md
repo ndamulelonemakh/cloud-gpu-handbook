@@ -23,11 +23,11 @@
 | GCP            | NVIDIA Tesla V100     | 16 GB      | 8     | 52 GB | $2.48          | n1-highmem-8          | [GCP GPU Instances](https://cloud.google.com/compute/docs/gpus)                           |
 | GCP            | NVIDIA T4             | 16 GB      | 4     | 15 GB | $0.95          | n1-standard-4         | [GCP GPU Instances](https://cloud.google.com/compute/docs/gpus)                           |
 | GCP            | NVIDIA A100           | 40 GB      | 12    | 85 GB | $4.10          | a2-highgpu-1g         | [GCP GPU Instances](https://cloud.google.com/compute/docs/gpus)                           |
-| GCP            | NVIDIA H100           | 80 GB      | 96    | 768 GB| $6.98          | a3-highgpu-1g         | [GCP A3 Instances](https://cloud.google.com/compute/docs/gpus/a3)                         |
+| GCP            | NVIDIA H100           | 80 GB      | 96    | 768 GB| $6.98          | a3-highgpu-1g         | [GCP A3 Instances](https://gcloud-compute.com/a3-highgpu-1g.html)                         |
 | Azure          | NVIDIA Tesla V100     | 16 GB      | 6     | 112 GB| $3.06          | Standard_NC6s_v3      | [Azure NCv3 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/ncv3-series) |
 | Azure          | NVIDIA T4             | 16 GB      | 4     | 28 GB | $0.90          | Standard_NC4as_T4_v3  | [Azure NC T4 v3 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/nct4-v3-series) |
 | Azure          | NVIDIA A100           | 40 GB      | 8     | 56 GB | $3.80          | Standard_NC8as_A100_v4| [Azure NC A100 v4 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/nca100-v4-series) |
-| Azure          | NVIDIA H100           | 80 GB      | 120   | 960 GB| $6.98          | Standard_NC96ads_H100_v5| [Azure NC H100 v5 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/nc-h100-v5-series) |
+| Azure          | NVIDIA H100           | 96 GB      | 40    | 320 GB | $6.98         | Standard_NC40ads_H100_v5| [Azure NC H100 v5 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/ncads-h100-v5) |
 
 Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep Learning & AI models. (**Note:** The prices are subject to change, check the provided links for the latest prices)
 
