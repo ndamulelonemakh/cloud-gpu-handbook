@@ -14,17 +14,20 @@
 
 * Note that we only list the most popular options for experimentation and training. For production, you should probably consider the full range of options available from each provider on their respective websites.
 
-| Cloud Provider | GPU Type                  | GPU Memory | vCPU | RAM    | Price*    | Technical Name      | Link                                                                                      |
-|----------------|---------------------------|------------|------|--------|-----------|---------------------|-------------------------------------------------------------------------------------------|
-| AWS            | NVIDIA Tesla V100         | 16GB       | 8    | 61GB   | $3.06/hr  | p3.2xlarge          | https://aws.amazon.com/ec2/instance-types/p3/                                             |
-| AWS            | NVIDIA Tesla T4           | 16GB       | 4    | 16GB   | $0.82/hr  | g4dn.xlarge         | https://aws.amazon.com/ec2/instance-types/g4/                                             |
-| AWS            | NVIDIA Tesla A10G         | 24GB       | 4    | 16GB   | $1.35/hr  | g5.xlarge           | https://aws.amazon.com/ec2/instance-types/g5/                                             |
-| GCP            | NVIDIA Tesla V100         | 16GB       | 8    | 61GB   | $2.48/hr  | n1-highmem-8        | https://cloud.google.com/compute/docs/gpus                                                |
-| GCP            | NVIDIA Tesla T4           | 16GB       | 4    | 16GB   | $0.95/hr  | n1-standard-4       | https://cloud.google.com/compute/docs/gpus                                                |
-| GCP            | NVIDIA Tesla A100         | 40GB       | 12   | 85GB   | $4.10/hr  | a2-highgpu-1g       | https://cloud.google.com/compute/docs/gpus                                                |
-| Azure          | NVIDIA Tesla V100         | 16GB       | 6    | 112GB  | $3.06/hr  | Standard_NC6s_v3    | https://docs.microsoft.com/en-us/azure/virtual-machines/ncv3-series                       |
-| Azure          | NVIDIA Tesla T4           | 16GB       | 4    | 28GB   | $0.90/hr  | Standard_NC4as_T4_v3| https://docs.microsoft.com/en-us/azure/virtual-machines/nct4-v3-series                    |
-| Azure          | NVIDIA Tesla A100         | 40GB       | 8    | 56GB   | $3.80/hr  | Standard_NC8as_A100_v4 | https://docs.microsoft.com/en-us/azure/virtual-machines/nca100-v4-series               |
+| Cloud Provider | GPU Model             | GPU Memory | vCPUs | RAM   | Price (USD/hr) | Instance Type         | Link                                                                                      |
+|----------------|-----------------------|------------|-------|-------|----------------|-----------------------|-------------------------------------------------------------------------------------------|
+| AWS            | NVIDIA Tesla V100     | 16 GB      | 8     | 61 GB | $3.06          | p3.2xlarge            | [AWS p3 Instances](https://aws.amazon.com/ec2/instance-types/p3/)                         |
+| AWS            | NVIDIA T4             | 16 GB      | 4     | 16 GB | $0.526         | g4dn.xlarge           | [AWS g4 Instances](https://aws.amazon.com/ec2/instance-types/g4/)                         |
+| AWS            | NVIDIA A10G           | 24 GB      | 4     | 16 GB | $1.006         | g5.xlarge             | [AWS g5 Instances](https://aws.amazon.com/ec2/instance-types/g5/)                         |
+| AWS            | NVIDIA H100           | 80 GB      | 192   | 2048 GB| $13.46         | p5.48xlarge           | [AWS p5 Instances](https://aws.amazon.com/ec2/instance-types/p5/)                         |
+| GCP            | NVIDIA Tesla V100     | 16 GB      | 8     | 52 GB | $2.48          | n1-highmem-8          | [GCP GPU Instances](https://cloud.google.com/compute/docs/gpus)                           |
+| GCP            | NVIDIA T4             | 16 GB      | 4     | 15 GB | $0.95          | n1-standard-4         | [GCP GPU Instances](https://cloud.google.com/compute/docs/gpus)                           |
+| GCP            | NVIDIA A100           | 40 GB      | 12    | 85 GB | $4.10          | a2-highgpu-1g         | [GCP GPU Instances](https://cloud.google.com/compute/docs/gpus)                           |
+| GCP            | NVIDIA H100           | 80 GB      | 96    | 768 GB| $6.98          | a3-highgpu-1g         | [GCP A3 Instances](https://cloud.google.com/compute/docs/gpus/a3)                         |
+| Azure          | NVIDIA Tesla V100     | 16 GB      | 6     | 112 GB| $3.06          | Standard_NC6s_v3      | [Azure NCv3 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/ncv3-series) |
+| Azure          | NVIDIA T4             | 16 GB      | 4     | 28 GB | $0.90          | Standard_NC4as_T4_v3  | [Azure NC T4 v3 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/nct4-v3-series) |
+| Azure          | NVIDIA A100           | 40 GB      | 8     | 56 GB | $3.80          | Standard_NC8as_A100_v4| [Azure NC A100 v4 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/nca100-v4-series) |
+| Azure          | NVIDIA H100           | 80 GB      | 120   | 960 GB| $6.98          | Standard_NC96ads_H100_v5| [Azure NC H100 v5 Series](https://learn.microsoft.com/en-us/azure/virtual-machines/nc-h100-v5-series) |
 
 Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep Learning & AI models. (**Note:** The prices are subject to change, check the provided links for the latest prices)
 
@@ -46,6 +49,7 @@ Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep 
 | NVIDIA Tesla K80          | 375.26                        |                               | 8.0                  |                      |
 | NVIDIA GeForce RTX 2080 Ti| 411.31                        |                               | 10.0                 |                      |
 | NVIDIA GeForce RTX 3090   | 452.39                        |                               | 11.0                 |                      |
+| NVIDIA H100               | 515.43                        |                               | 12.0                 |                      |
 
 
 ## Specialized GPU Offerings
