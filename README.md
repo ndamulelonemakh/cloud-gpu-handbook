@@ -1,10 +1,8 @@
 # Cloud GPU Handbook [WIP]
 
-* Author: [Ndamulelo Nemakhavhani](https://linkedin.com/in/ndamulelonemakhavhani)
-
 **Motivation** - I want to create an easy-to-read catalog of common cloud GPU offerings for users to quickly get started with training models or conduct their research. This repository will attempt to provide relevant specifications, pricing, and setup information to save time and effort for Data Scientists, Machine Learning Engineers, Platform Engineers etc.
 
-> **Updates:** I will try to keep this catalog up to date with the latest information. If you find any errors or have any suggestions, please feel free to create an issue or a pull request. Contributions are welcome.
+> **Updates:** I will try to keep this catalog up to date with the latest information. If you find any errors or have any suggestions, please feel free to create an issue or a pull request.
 
 ## Key features:
 
@@ -29,6 +27,8 @@
 | Azure          | NVIDIA Tesla A100         | 40GB       | 8    | 56GB   | $3.80/hr  | Standard_NC8as_A100_v4 | https://docs.microsoft.com/en-us/azure/virtual-machines/nca100-v4-series               |
 
 Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep Learning & AI models. (**Note:** The prices are subject to change, check the provided links for the latest prices)
+
+> **Note**: Prices are subject to change and may vary by region. Always refer to the official pricing pages for the most current information.
 
 ### NVIDIA Drivers & CUDA Installation
 
@@ -55,6 +55,8 @@ Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep 
 * [Jarvis Labs](https://jarvislabs.ai/)
 * [Lambda GPU Cloud](https://lambdalabs.com/service/gpu-cloud)
 * [Coreweave](https://www.coreweave.com/)
+* [Vast.ai](https://vast.ai/)
+* [Genesis Cloud](https://www.genesiscloud.com/)
 
 ## Notebook GPU Offerings
 
@@ -62,8 +64,10 @@ Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep 
 * Most of these providers provide generous free tiers for experimentation and learning for a limited time.
 
 * [Google Colaboratory](https://colab.research.google.com/)
-* [Kaggle](https://www.kaggle.com/code)
-* [AWS SageMaker Studio Lab](https://studiolab.sagemaker.aws/) 
+* [Kaggle Kernels](https://www.kaggle.com/code)
+* [AWS SageMaker Studio Lab](https://studiolab.sagemaker.aws/)
+- [Gradient by Paperspace](https://www.paperspace.com/gradient)
+- [Lightning AI Studio](https://lightning.ai/studios)
 
 # Tips
 
@@ -85,3 +89,11 @@ Table 1: Compare popular NVIDIA GPUs from AWS, GCP, and Azure for training Deep 
 * [PyTorch GPU Support](https://pytorch.org/get-started/locally/)
 * [TensorFlow GPU Support](https://www.tensorflow.org/install/gpu)
 * [NVIDIA GPU Cloud](https://www.nvidia.com/en-us/gpu-cloud/)
+
+
+## Tips
+
+- **Instance Management:** Stop or terminate instances when not in use to avoid unnecessary charges.
+- **Spot Instances:** Utilize spot instances for cost savings, but be aware of potential interruptions; they are best suited for fault-tolerant workloads.
+- **Billing Alerts:** Set up billing alerts and budgets to monitor and control spending effectively.
+- **Version Control:** Use platforms like GitHub or GitLab for version control to facilitate collaboration and track experiments.
